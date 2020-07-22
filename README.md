@@ -20,6 +20,18 @@ plt.plot(DGF.finance, color='green', label='FINANCE')
 plt.legend()
 plt.show()
 -------------------------------------------------------------------------------------------------------------------------------------------------------
+churn dataset 
+import pandas as pd
+import matplotlib.pyplot as plt
+df = pd.read_csv('churn.csv')
+m = df.groupby(['Churn']).mean()
+m.plot(kind='bar')
+#labels= ['no','yes']
+plt.xlabel('Churn', size=20)
+plt.ylabel('Counts', size=20)
+plt.title('CHURN MEAN', size=20)
+plt.legend(loc=1)
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
